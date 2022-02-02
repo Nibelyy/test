@@ -1,0 +1,82 @@
+:root {
+   --gradient-percentage: 0%;
+   --gradient-degree-of-rotation: 90deg;
+ }
+#ktl {
+	background-image: linear-gradient(var(--gradient-degree-of-rotation), #CC4EEE var(--gradient-percentage),#B3E777 100%);
+ }
+p {
+	background: #fff344
+ }
+a {
+text-decoration:none;
+}
+
+description {
+	font-size: 100px;
+	font-family: sans-serif;
+	
+ }
+DFNdescription {
+	font-size: 65px;
+	font-family: sans-serif;
+
+}
+footer {
+	height: 100px;
+}
+.podval {
+	justify-content:space-evenly;
+	background: #ddd333;
+ }
+.stage {
+	display: flex;
+	height: 66px;
+ }
+dfn {
+	font-size: 45px;
+	font-family: georgia;
+ }
+
+strong {
+	align: center;
+	font-family: sans-serif;
+	color: navy;
+ } 
+ .outline {
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ }
+nav {
+	background-image: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+	border: 2px solid;
+	border-radius: 10px 100px / 120px;
+	height: 50px;
+ }
+ 
+div {
+	display:flex;
+	text-align: center;
+	font-family: serif;
+	
+ }
+.mainstage {
+ 	display:flex;
+	justify-content:space-around;
+}
+h1 {
+align: left;
+color: blue;
+}
+legend {
+font-size: 50px;
+}
+#div1 {
+	background-color: 
+ }
+.productBox {
+	justify-content:flex-end;
+ }
+.product {
+	display:flex;
+ }

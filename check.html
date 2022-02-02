@@ -1,5 +1,98 @@
-<html>
-  <head>
-    <link >
-   </head>
-  </hmtl>
+<html> 
+<head>
+	<link rel="icon" href="https://cdn.discordapp.com/attachments/660206157335363585/938374081336733796/Screenshot_4.jpg">
+	<link rel="stylesheet" href="checkCSS.css">
+	<title> контрольная </title>
+</head>
+<header>
+	<nav align="center" class="mainstage">
+		<a href="#about"> 
+		<div class="top outline">
+		
+		<dfn> О компании </dfn>
+		</div>
+		</a>
+		
+		<a href="#podval">
+		<div class="top outline">
+		<dfn> Наш адрес </dfn>
+		</div>
+		</a>
+		
+		<a href="#catalog">
+		<div class="top outline">
+		<dfn> Товары </dfn>
+		</div>
+		</a>
+		
+		<a href="productSales">
+		<div class="top outline">
+		<dfn> Как приобрести? </dfn>
+		</div>
+		</a>
+		
+	</nav>
+</header>
+<body>
+<h1 id="about"> О компании </h1>
+<div class="description"> Мы занимаемся контрабандой генно-модифицированных овощей. Наши овощи имеют до 47 лишних хромосом </div>
+<fieldset id="ktl" id="catalog">
+    <legend class="outline">Наши товары</legend>
+
+
+    <label> 
+			<img src="https://cdn.discordapp.com/attachments/660206157335363585/938373218887155752/Screenshot_1.jpg" title="арбуз"><i class="outline"> Назовите продукт сами: <input></i>
+			
+	</label><br/> <br>
+
+    <label><img src="https://cdn.discordapp.com/attachments/660206157335363585/938373219314987048/Screenshot_2.jpg"><i class="outline"> Назовите продукт сами: <input></i>
+	
+	<label><br/><br>
+
+    <label><img src="https://cdn.discordapp.com/attachments/660206157335363585/938373219570823238/Screenshot_3.jpg"><i class="outline"> Назовите продукт сами: <input></i>
+	</label>
+  </fieldset>
+
+<h2 id="productSales"> <strong>Как приобрести? </strong> </h2>
+<dfn class="outline DFNdescription">
+Обратится к главе нашей компании: <a href="https://mikhailtavern.github.io/Valera/"> Казак </a>
+</dfn>
+</body>
+<footer id="podval" class="podval">
+	<p> Контакты: </p>
+	<p> НОМЕРТЕЛЕФОНА </p>
+	<p> АДРЕС: 478 АВ УАО УАУ 43884 АВ </p>
+</footer>
+<script type="text/javascript">
+var u = 0;
+var v = 1;
+var timeInterval = Math.floor(Math.random() * 1501 + 9000);
+const gradientPercentage = document.querySelector('#ktl');
+const gradientDegreeOfRotation = document.querySelector('#ktl');
+function setGradientPercentage(scale) {
+  gradientPercentage.style.setProperty('--gradient-percentage', scale +'%');
+  if (u == 0) {
+  v=1;
+  }
+  if (u == 100) { 
+  v = 0;
+  }
+  if (v == 1) {
+   u++;
+   } else {
+   u--;
+   }
+ }
+function setGradientDegreeOfRotation(degree) {
+  gradientDegreeOfRotation.style.setProperty('--gradient-degree-of-rotation', degree +'deg');
+  timeInterval = Math.floor(Math.random() * 1501 + 9000);
+  setTimeout("randomizeGradientDegreeOfRotation()", timeInterval);
+  }
+function randomizeGradientDegreeOfRotation() {
+  const degreeOfRotation = Math.floor(Math.random() * 361);
+  setGradientDegreeOfRotation(degreeOfRotation);
+  }
+    setTimeout("randomizeGradientDegreeOfRotation()", timeInterval);
+	setInterval("setGradientPercentage(u)", 50);
+</script>
+</html>
